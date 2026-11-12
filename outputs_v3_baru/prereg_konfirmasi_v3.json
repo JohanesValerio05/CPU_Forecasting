@@ -1,0 +1,110 @@
+{
+  "versi": 3,
+  "dibuat": "2026-11-10 22:49:37",
+  "status": "dibekukan sebelum data konfirmasi dievaluasi",
+  "riwayat": [
+    {
+      "versi": 1,
+      "dibuat": "2026-11-08 13:09:43",
+      "sha256": "f8600378da22c95951d34ff71b99ac279b5895d10d527a33cc4b7d13e6e9fd64",
+      "alasan_diganti": "pembersihan data kosong ditambahkan"
+    },
+    {
+      "versi": 2,
+      "dibuat": "2026-11-08 14:05:01",
+      "sha256": "289111e54ac323eded7b93564b8669f75da8aa28ef7b9f326cc27b2fa4f8773e",
+      "alasan_diganti": "pipeline diganti notebook v3 (kalender library holidays, telemetri terpilih, iterasi boosting tetap, uji DM)"
+    }
+  ],
+  "seleksi_beku_sha256": "abe693959840af4712e76512ab9024c00fa7c48c654d505a40b56f7e17075043",
+  "model_final": "Ensemble GBDT \u00b7 CPU + kalender + telemetri terpilih",
+  "kandidat": {
+    "A": "Ensemble GBDT \u00b7 CPU + kalender",
+    "B": "Ensemble GBDT \u00b7 CPU + kalender + telemetri terpilih",
+    "konfigurasi": {
+      "HistGradientBoosting | CPU + kalender": {
+        "kind": "hgb",
+        "fs": "cpu",
+        "target": "resid",
+        "hl": null,
+        "alpha": null
+      },
+      "HistGradientBoosting | CPU + kalender + telemetri terpilih": {
+        "kind": "hgb",
+        "fs": "tele",
+        "target": "raw",
+        "hl": null,
+        "alpha": null
+      },
+      "LightGBM | CPU + kalender": {
+        "kind": "lgbm",
+        "fs": "cpu",
+        "target": "resid",
+        "hl": null,
+        "alpha": null
+      },
+      "LightGBM | CPU + kalender + telemetri terpilih": {
+        "kind": "lgbm",
+        "fs": "tele",
+        "target": "raw",
+        "hl": 180,
+        "alpha": null
+      },
+      "XGBoost | CPU + kalender": {
+        "kind": "xgb",
+        "fs": "cpu",
+        "target": "resid",
+        "hl": null,
+        "alpha": null
+      },
+      "XGBoost | CPU + kalender + telemetri terpilih": {
+        "kind": "xgb",
+        "fs": "tele",
+        "target": "resid",
+        "hl": 180,
+        "alpha": null
+      }
+    }
+  },
+  "data": {
+    "origin_pertama": "2026-11-01 00:00 (semua targetnya setelah batas data)",
+    "syarat_jalan": "minimal 28 hari origin dinilai: data CPU lengkap sampai >= 2026-12-04 00:00",
+    "refit": "model dilatih ulang tiap tanggal 1 dengan label yang sudah matang; data training = semua data sampai waktu refit"
+  },
+  "pembersihan": {
+    "max_gap_jam": 3,
+    "min_target": 0.95
+  },
+  "telemetri": [
+    "sysload_1m",
+    "sysload_15m",
+    "network_rx_bytes_per_sec",
+    "network_tx_bytes_per_sec",
+    "disk_read_bytes_per_sec",
+    "disk_write_bytes_per_sec",
+    "disk_read_iops",
+    "disk_write_iops"
+  ],
+  "kalender": {
+    "sumber": "holidays",
+    "versi": "0.108",
+    "kategori": [
+      "public",
+      "government"
+    ]
+  },
+  "uji": "Diebold-Mariano fixed-m (Coroneo & Iacone, 2020), m = floor(T^(1/3)), t(2m), selisih MAE per origin",
+  "aturan_keputusan": [
+    "Hipotesis utama: MAE(Ensemble GBDT \u00b7 CPU + kalender + telemetri terpilih) - MAE(Ensemble GBDT \u00b7 CPU + kalender) < 0.",
+    "Bila CI 95% atas < 0: telemetri terbukti membantu; model operasional = ensemble dengan telemetri.",
+    "Selain itu: model operasional = ensemble CPU + kalender (lebih sederhana, tidak bergantung pada pengumpulan telemetri).",
+    "Bila lebih dari 50% origin konfirmasi memakai fallback C3: telemetri dianggap tidak andal; model operasional = ensemble CPU + kalender."
+  ],
+  "dilaporkan_tanpa_keputusan": [
+    "model final vs Rata-rata 4 minggu dan Naif musiman mingguan (uji DM)",
+    "MAE per pita horizon dan per bulan",
+    "MAE dan bias puncak (CPU >= 80%)",
+    "jumlah origin fallback dan origin dengan target tidak lengkap"
+  ],
+  "larangan": "tidak ada tuning, perubahan fitur, atau pemilihan ulang setelah data konfirmasi dilihat; analisis tambahan ditandai eksploratori"
+}

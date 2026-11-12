@@ -1,0 +1,41 @@
+{
+  "amandemen": 1,
+  "dibuat": "2026-11-10 22:49:37",
+  "prereg_v3_sha256": "f7b9064ec96bf561b486915596982d871904051312da2640fbb2989129b476d3",
+  "seleksi_probabilistik_sha256": "3eeb8a74e361c69c66b4a2a57d91d1f4434c184c453735ac195d13ed493fbd7f",
+  "hipotesis_utama": "tidak berubah (lihat prereg v3)",
+  "outcome_sekunder": [
+    {
+      "nama": "S1 prediksi probabilistik",
+      "metode": "Prediksi titik model final + kuantil galat terkini (EnbPI)",
+      "kuantil": [
+        0.05,
+        0.1,
+        0.25,
+        0.5,
+        0.75,
+        0.9,
+        0.95
+      ],
+      "jendela_kalibrasi_hari": 28,
+      "dilaporkan": "skor kuantil rata-rata, cakupan interval 80% dan 90% (dibanding nominal), lebar, skor Winkler, kalibrasi per kuantil",
+      "fallback": "origin dengan outage telemetri memakai metode EnbPI pada prediksi titik fallback"
+    },
+    {
+      "nama": "S2 biaya kapasitas asimetris",
+      "k": [
+        1,
+        3,
+        9,
+        19
+      ],
+      "aturan": "untuk k = 3, 9, 19: kuantil tau = k/(k+1) dinilai lebih murah daripada prediksi titik model final bila CI 95% atas selisih biaya per origin < 0 (uji DM fixed-m)",
+      "dilaporkan": "biaya rata-rata, % jam kekurangan, kelebihan rata-rata"
+    },
+    {
+      "nama": "S3 kontribusi telemetri (TreeSHAP)",
+      "dilaporkan": "porsi |SHAP| per kelompok fitur per refit; deskriptif, tanpa uji"
+    }
+  ],
+  "larangan": "tidak ada perubahan metode, kuantil, jendela, atau rasio k setelah data konfirmasi dilihat"
+}

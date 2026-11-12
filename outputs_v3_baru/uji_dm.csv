@@ -1,0 +1,19 @@
+Fase,Model A,Dibanding (B),Selisih MAE (A − B),CI 95% bawah,CI 95% atas,p,T origin,m,Kesimpulan
+Validation,Ensemble GBDT · CPU + kalender + telemetri terpilih,Ensemble GBDT · CPU + kalender,-0.17858606892112927,-0.4064102983081743,0.04923816046591578,0.11487815222185799,473,7,tidak berbeda nyata
+Validation,HistGradientBoosting · CPU + kalender + telemetri terpilih,HistGradientBoosting · CPU + kalender,-0.0792519355726962,-0.3966700381880409,0.23816616704264848,0.6007057867415843,473,7,tidak berbeda nyata
+Validation,LightGBM · CPU + kalender + telemetri terpilih,LightGBM · CPU + kalender,-0.14891581014933394,-0.45272275445568655,0.1548911341570187,0.31092900784571675,473,7,tidak berbeda nyata
+Validation,XGBoost · CPU + kalender + telemetri terpilih,XGBoost · CPU + kalender,-0.05025180626886388,-0.23865619722176423,0.13815258468403646,0.5763495878305144,473,7,tidak berbeda nyata
+Validation,Ensemble GBDT · CPU + kalender + telemetri terpilih,Rata-rata 4 minggu,-1.5321884701180823,-2.8930664903584673,-0.1713104498776974,0.030006926298200905,473,7,lebih baik
+Validation,Ensemble GBDT · CPU + kalender + telemetri terpilih,Naif musiman mingguan,-3.691487255170982,-5.08612856900216,-2.296845941339804,5.712148517065867e-05,473,7,lebih baik
+Validation,Ensemble GBDT · CPU + kalender,Rata-rata 4 minggu,-1.3536024011969534,-2.7498579122028364,0.04265310980892956,0.05645451794642366,473,7,tidak berbeda nyata
+Validation,Ensemble GBDT · CPU + kalender,LightGBM · CPU + kalender,-0.07184824366779673,-0.1849494806564182,0.04125299332082476,0.19456118918417425,473,7,tidak berbeda nyata
+Validation,Ensemble GBDT · CPU + kalender + telemetri terpilih,LightGBM · CPU + kalender + telemetri terpilih,-0.10151850243959204,-0.21602460235874477,0.012987597479560672,0.0780154608854405,473,7,tidak berbeda nyata
+Test,Ensemble GBDT · CPU + kalender + telemetri terpilih,Ensemble GBDT · CPU + kalender,-0.06906879254256054,-0.22616691847045414,0.08802933338533306,0.3570039000136037,225,6,tidak berbeda nyata
+Test,HistGradientBoosting · CPU + kalender + telemetri terpilih,HistGradientBoosting · CPU + kalender,0.11486794393422761,-0.11899892789886274,0.34873481576731796,0.3055991888742286,225,6,tidak berbeda nyata
+Test,LightGBM · CPU + kalender + telemetri terpilih,LightGBM · CPU + kalender,-0.08925385253004754,-0.3367123017376744,0.1582045966775793,0.4471902917720482,225,6,tidak berbeda nyata
+Test,XGBoost · CPU + kalender + telemetri terpilih,XGBoost · CPU + kalender,-0.09805617264670943,-0.2089608064007286,0.012848461107309722,0.0780690806737259,225,6,tidak berbeda nyata
+Test,Ensemble GBDT · CPU + kalender + telemetri terpilih,Rata-rata 4 minggu,-0.5085824440140475,-1.1843052417728757,0.16714035374478053,0.12696193830315164,225,6,tidak berbeda nyata
+Test,Ensemble GBDT · CPU + kalender + telemetri terpilih,Naif musiman mingguan,-1.76406486500234,-2.75030908672585,-0.77782064327883,0.002120887520674044,225,6,lebih baik
+Test,Ensemble GBDT · CPU + kalender,Rata-rata 4 minggu,-0.43951365147148697,-1.1405437397402354,0.2615164367972615,0.1969886096450765,225,6,tidak berbeda nyata
+Test,Ensemble GBDT · CPU + kalender,LightGBM · CPU + kalender,0.01441868968973712,-0.043775786379703606,0.07261316575917784,0.5991833829023997,225,6,tidak berbeda nyata
+Test,Ensemble GBDT · CPU + kalender + telemetri terpilih,LightGBM · CPU + kalender + telemetri terpilih,0.03460374967722414,-0.0667561181328231,0.13596361748727137,0.4712902276428059,225,6,tidak berbeda nyata

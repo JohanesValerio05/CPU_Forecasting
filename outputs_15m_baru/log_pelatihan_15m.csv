@@ -1,0 +1,109 @@
+varian,refit,model,baris_training,detik,fase
+utama,2026-05-01,HistGradientBoosting · CPU + kalender · target langsung · bobot rata,1064357,24.2,validation
+utama,2026-05-01,HistGradientBoosting · CPU + kalender · target langsung · bobot half-life 180 hari,1064357,43.4,validation
+utama,2026-05-01,LightGBM · CPU + kalender · target langsung · bobot rata,1064357,14.4,validation
+utama,2026-05-01,LightGBM · CPU + kalender · target langsung · bobot half-life 180 hari,1064357,51.5,validation
+utama,2026-05-01,XGBoost · CPU + kalender · target langsung · bobot rata,1064357,8.9,validation
+utama,2026-05-01,XGBoost · CPU + kalender · target langsung · bobot half-life 180 hari,1064357,7.8,validation
+utama,2026-05-01,HistGradientBoosting · CPU + kalender · target residual · bobot rata,1064357,27.5,validation
+utama,2026-05-01,HistGradientBoosting · CPU + kalender · target residual · bobot half-life 180 hari,1064357,46.2,validation
+utama,2026-05-01,LightGBM · CPU + kalender · target residual · bobot rata,1064357,15.0,validation
+utama,2026-05-01,LightGBM · CPU + kalender · target residual · bobot half-life 180 hari,1064357,52.4,validation
+utama,2026-05-01,XGBoost · CPU + kalender · target residual · bobot rata,1064357,8.7,validation
+utama,2026-05-01,XGBoost · CPU + kalender · target residual · bobot half-life 180 hari,1064357,7.7,validation
+utama,2026-05-01,HistGradientBoosting · CPU + kalender + telemetri terpilih · target langsung · bobot rata,1064357,33.2,validation
+utama,2026-05-01,HistGradientBoosting · CPU + kalender + telemetri terpilih · target langsung · bobot half-life 180 hari,1064357,53.0,validation
+utama,2026-05-01,LightGBM · CPU + kalender + telemetri terpilih · target langsung · bobot rata,1064357,21.4,validation
+utama,2026-05-01,LightGBM · CPU + kalender + telemetri terpilih · target langsung · bobot half-life 180 hari,1064357,60.5,validation
+utama,2026-05-01,XGBoost · CPU + kalender + telemetri terpilih · target langsung · bobot rata,1064357,11.4,validation
+utama,2026-05-01,XGBoost · CPU + kalender + telemetri terpilih · target langsung · bobot half-life 180 hari,1064357,10.5,validation
+utama,2026-05-01,HistGradientBoosting · CPU + kalender + telemetri terpilih · target residual · bobot rata,1064357,32.4,validation
+utama,2026-05-01,HistGradientBoosting · CPU + kalender + telemetri terpilih · target residual · bobot half-life 180 hari,1064357,52.0,validation
+utama,2026-05-01,LightGBM · CPU + kalender + telemetri terpilih · target residual · bobot rata,1064357,22.7,validation
+utama,2026-05-01,LightGBM · CPU + kalender + telemetri terpilih · target residual · bobot half-life 180 hari,1064357,60.6,validation
+utama,2026-05-01,XGBoost · CPU + kalender + telemetri terpilih · target residual · bobot rata,1064357,11.6,validation
+utama,2026-05-01,XGBoost · CPU + kalender + telemetri terpilih · target residual · bobot half-life 180 hari,1064357,10.2,validation
+utama,2026-06-01,HistGradientBoosting · CPU + kalender · target langsung · bobot rata,1242917,29.1,validation
+utama,2026-06-01,HistGradientBoosting · CPU + kalender · target langsung · bobot half-life 180 hari,1242917,52.7,validation
+utama,2026-06-01,LightGBM · CPU + kalender · target langsung · bobot rata,1242917,17.4,validation
+utama,2026-06-01,LightGBM · CPU + kalender · target langsung · bobot half-life 180 hari,1242917,61.6,validation
+utama,2026-06-01,XGBoost · CPU + kalender · target langsung · bobot rata,1242917,7.8,validation
+utama,2026-06-01,XGBoost · CPU + kalender · target langsung · bobot half-life 180 hari,1242917,8.2,validation
+utama,2026-06-01,HistGradientBoosting · CPU + kalender · target residual · bobot rata,1242917,30.9,validation
+utama,2026-06-01,HistGradientBoosting · CPU + kalender · target residual · bobot half-life 180 hari,1242917,53.1,validation
+utama,2026-06-01,LightGBM · CPU + kalender · target residual · bobot rata,1242917,15.7,validation
+utama,2026-06-01,LightGBM · CPU + kalender · target residual · bobot half-life 180 hari,1242917,56.0,validation
+utama,2026-06-01,XGBoost · CPU + kalender · target residual · bobot rata,1242917,7.9,validation
+utama,2026-06-01,XGBoost · CPU + kalender · target residual · bobot half-life 180 hari,1242917,8.2,validation
+utama,2026-06-01,HistGradientBoosting · CPU + kalender + telemetri terpilih · target langsung · bobot rata,1242917,40.1,validation
+utama,2026-06-01,HistGradientBoosting · CPU + kalender + telemetri terpilih · target langsung · bobot half-life 180 hari,1242917,64.0,validation
+utama,2026-06-01,LightGBM · CPU + kalender + telemetri terpilih · target langsung · bobot rata,1242917,21.8,validation
+utama,2026-06-01,LightGBM · CPU + kalender + telemetri terpilih · target langsung · bobot half-life 180 hari,1242917,66.8,validation
+utama,2026-06-01,XGBoost · CPU + kalender + telemetri terpilih · target langsung · bobot rata,1242917,11.5,validation
+utama,2026-06-01,XGBoost · CPU + kalender + telemetri terpilih · target langsung · bobot half-life 180 hari,1242917,10.6,validation
+utama,2026-06-01,HistGradientBoosting · CPU + kalender + telemetri terpilih · target residual · bobot rata,1242917,38.7,validation
+utama,2026-06-01,HistGradientBoosting · CPU + kalender + telemetri terpilih · target residual · bobot half-life 180 hari,1242917,61.9,validation
+utama,2026-06-01,LightGBM · CPU + kalender + telemetri terpilih · target residual · bobot rata,1242917,22.0,validation
+utama,2026-06-01,LightGBM · CPU + kalender + telemetri terpilih · target residual · bobot half-life 180 hari,1242917,64.5,validation
+utama,2026-06-01,XGBoost · CPU + kalender + telemetri terpilih · target residual · bobot rata,1242917,11.4,validation
+utama,2026-06-01,XGBoost · CPU + kalender + telemetri terpilih · target residual · bobot half-life 180 hari,1242917,10.5,validation
+utama,2026-07-01,HistGradientBoosting · CPU + kalender · target langsung · bobot rata,1413699,33.0,validation
+utama,2026-07-01,HistGradientBoosting · CPU + kalender · target langsung · bobot half-life 180 hari,1413699,58.6,validation
+utama,2026-07-01,LightGBM · CPU + kalender · target langsung · bobot rata,1413699,18.1,validation
+utama,2026-07-01,LightGBM · CPU + kalender · target langsung · bobot half-life 180 hari,1413699,69.9,validation
+utama,2026-07-01,XGBoost · CPU + kalender · target langsung · bobot rata,1413699,9.7,validation
+utama,2026-07-01,XGBoost · CPU + kalender · target langsung · bobot half-life 180 hari,1413699,8.8,validation
+utama,2026-07-01,HistGradientBoosting · CPU + kalender · target residual · bobot rata,1413699,33.0,validation
+utama,2026-07-01,HistGradientBoosting · CPU + kalender · target residual · bobot half-life 180 hari,1413699,58.6,validation
+utama,2026-07-01,LightGBM · CPU + kalender · target residual · bobot rata,1413699,17.9,validation
+utama,2026-07-01,LightGBM · CPU + kalender · target residual · bobot half-life 180 hari,1413699,68.4,validation
+utama,2026-07-01,XGBoost · CPU + kalender · target residual · bobot rata,1413699,8.8,validation
+utama,2026-07-01,XGBoost · CPU + kalender · target residual · bobot half-life 180 hari,1413699,8.9,validation
+utama,2026-07-01,HistGradientBoosting · CPU + kalender + telemetri terpilih · target langsung · bobot rata,1413699,42.7,validation
+utama,2026-07-01,HistGradientBoosting · CPU + kalender + telemetri terpilih · target langsung · bobot half-life 180 hari,1413699,69.5,validation
+utama,2026-07-01,LightGBM · CPU + kalender + telemetri terpilih · target langsung · bobot rata,1413699,25.6,validation
+utama,2026-07-01,LightGBM · CPU + kalender + telemetri terpilih · target langsung · bobot half-life 180 hari,1413699,80.5,validation
+utama,2026-07-01,XGBoost · CPU + kalender + telemetri terpilih · target langsung · bobot rata,1413699,11.9,validation
+utama,2026-07-01,XGBoost · CPU + kalender + telemetri terpilih · target langsung · bobot half-life 180 hari,1413699,12.0,validation
+utama,2026-07-01,HistGradientBoosting · CPU + kalender + telemetri terpilih · target residual · bobot rata,1413699,42.9,validation
+utama,2026-07-01,HistGradientBoosting · CPU + kalender + telemetri terpilih · target residual · bobot half-life 180 hari,1413699,69.1,validation
+utama,2026-07-01,LightGBM · CPU + kalender + telemetri terpilih · target residual · bobot rata,1413699,24.6,validation
+utama,2026-07-01,LightGBM · CPU + kalender + telemetri terpilih · target residual · bobot half-life 180 hari,1413699,76.8,validation
+utama,2026-07-01,XGBoost · CPU + kalender + telemetri terpilih · target residual · bobot rata,1413699,11.7,validation
+utama,2026-07-01,XGBoost · CPU + kalender + telemetri terpilih · target residual · bobot half-life 180 hari,1413699,11.8,validation
+utama,2026-08-01,HistGradientBoosting · CPU + kalender · target langsung · bobot rata,1592259,37.8,validation
+utama,2026-08-01,HistGradientBoosting · CPU + kalender · target langsung · bobot half-life 180 hari,1592259,66.4,validation
+utama,2026-08-01,LightGBM · CPU + kalender · target langsung · bobot rata,1592259,19.7,validation
+utama,2026-08-01,LightGBM · CPU + kalender · target langsung · bobot half-life 180 hari,1592259,82.3,validation
+utama,2026-08-01,XGBoost · CPU + kalender · target langsung · bobot rata,1592259,9.6,validation
+utama,2026-08-01,XGBoost · CPU + kalender · target langsung · bobot half-life 180 hari,1592259,10.0,validation
+utama,2026-08-01,HistGradientBoosting · CPU + kalender · target residual · bobot rata,1592259,39.3,validation
+utama,2026-08-01,HistGradientBoosting · CPU + kalender · target residual · bobot half-life 180 hari,1592259,67.9,validation
+utama,2026-08-01,LightGBM · CPU + kalender · target residual · bobot rata,1592259,20.5,validation
+utama,2026-08-01,LightGBM · CPU + kalender · target residual · bobot half-life 180 hari,1592259,76.8,validation
+utama,2026-08-01,XGBoost · CPU + kalender · target residual · bobot rata,1592259,10.7,validation
+utama,2026-08-01,XGBoost · CPU + kalender · target residual · bobot half-life 180 hari,1592259,9.9,validation
+utama,2026-08-01,HistGradientBoosting · CPU + kalender + telemetri terpilih · target langsung · bobot rata,1592259,48.9,validation
+utama,2026-08-01,HistGradientBoosting · CPU + kalender + telemetri terpilih · target langsung · bobot half-life 180 hari,1592259,78.9,validation
+utama,2026-08-01,LightGBM · CPU + kalender + telemetri terpilih · target langsung · bobot rata,1592259,28.2,validation
+utama,2026-08-01,LightGBM · CPU + kalender + telemetri terpilih · target langsung · bobot half-life 180 hari,1592259,93.0,validation
+utama,2026-08-01,XGBoost · CPU + kalender + telemetri terpilih · target langsung · bobot rata,1592259,13.5,validation
+utama,2026-08-01,XGBoost · CPU + kalender + telemetri terpilih · target langsung · bobot half-life 180 hari,1592259,14.2,validation
+utama,2026-08-01,HistGradientBoosting · CPU + kalender + telemetri terpilih · target residual · bobot rata,1592259,50.3,validation
+utama,2026-08-01,HistGradientBoosting · CPU + kalender + telemetri terpilih · target residual · bobot half-life 180 hari,1592259,79.0,validation
+utama,2026-08-01,LightGBM · CPU + kalender + telemetri terpilih · target residual · bobot rata,1592259,27.3,validation
+utama,2026-08-01,LightGBM · CPU + kalender + telemetri terpilih · target residual · bobot half-life 180 hari,1592259,85.3,validation
+utama,2026-08-01,XGBoost · CPU + kalender + telemetri terpilih · target residual · bobot rata,1592259,13.3,validation
+utama,2026-08-01,XGBoost · CPU + kalender + telemetri terpilih · target residual · bobot half-life 180 hari,1592259,13.9,validation
+utama,2026-09-01,HistGradientBoosting · CPU + kalender · target residual · bobot rata,1769864,41.1,test
+utama,2026-09-01,HistGradientBoosting · CPU + kalender + telemetri terpilih · target residual · bobot rata,1769864,52.7,test
+utama,2026-09-01,LightGBM · CPU + kalender · target residual · bobot rata,1769864,21.6,test
+utama,2026-09-01,LightGBM · CPU + kalender + telemetri terpilih · target residual · bobot rata,1769864,31.1,test
+utama,2026-09-01,XGBoost · CPU + kalender · target residual · bobot rata,1769864,11.5,test
+utama,2026-09-01,XGBoost · CPU + kalender + telemetri terpilih · target residual · bobot rata,1769864,14.1,test
+utama,2026-10-01,HistGradientBoosting · CPU + kalender · target residual · bobot rata,1942664,43.4,test
+utama,2026-10-01,HistGradientBoosting · CPU + kalender + telemetri terpilih · target residual · bobot rata,1942664,56.3,test
+utama,2026-10-01,LightGBM · CPU + kalender · target residual · bobot rata,1942664,23.8,test
+utama,2026-10-01,LightGBM · CPU + kalender + telemetri terpilih · target residual · bobot rata,1942664,33.1,test
+utama,2026-10-01,XGBoost · CPU + kalender · target residual · bobot rata,1942664,12.4,test
+utama,2026-10-01,XGBoost · CPU + kalender + telemetri terpilih · target residual · bobot rata,1942664,14.9,test

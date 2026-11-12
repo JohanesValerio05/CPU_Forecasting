@@ -1,0 +1,29 @@
+{
+  "model_final_30m": "Ensemble GBDT \u00b7 CPU + kalender + telemetri terpilih",
+  "model_final_1jam": "Ensemble GBDT \u00b7 CPU + kalender + telemetri terpilih",
+  "dm_utama": {
+    "Validation": {
+      "Model A": "30 menit \u00b7 final (Ensemble GBDT \u00b7 CPU + kalender + telemetri terpilih)",
+      "Dibanding (B)": "1 jam \u00b7 final (Ensemble GBDT \u00b7 CPU + kalender + telemetri terpilih)",
+      "Selisih MAE (A \u2212 B)": 0.030074505963437907,
+      "CI 95% bawah": -0.2554623251754438,
+      "CI 95% atas": 0.31561133710231964,
+      "p": 0.8245421280836773,
+      "T origin": 471.0,
+      "m": 7.0,
+      "Kesimpulan": "tidak berbeda nyata"
+    },
+    "Test": {
+      "Model A": "30 menit \u00b7 final (Ensemble GBDT \u00b7 CPU + kalender + telemetri terpilih)",
+      "Dibanding (B)": "1 jam \u00b7 final (Ensemble GBDT \u00b7 CPU + kalender + telemetri terpilih)",
+      "Selisih MAE (A \u2212 B)": 0.0689030603060582,
+      "CI 95% bawah": -0.10882877242477088,
+      "CI 95% atas": 0.24663489303688726,
+      "p": 0.41481192692686925,
+      "T origin": 225.0,
+      "m": 6.0,
+      "Kesimpulan": "tidak berbeda nyata"
+    }
+  },
+  "seleksi_sha256": "a40810aeaf7aeea6a91d5da0dbf7edf9b537aeb5926c42b8000ca937a1e2543c"
+}

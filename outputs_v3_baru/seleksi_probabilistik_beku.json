@@ -1,0 +1,42 @@
+{
+  "dibekukan": "2026-11-10 22:41:53",
+  "aturan": "skor kuantil rata-rata validation terendah",
+  "metode_terpilih": "Prediksi titik model final + kuantil galat terkini (EnbPI)",
+  "kunci": "m3",
+  "skor_validation": {
+    "LightGBM kuantil": 4.6617331166129485,
+    "LightGBM kuantil + kalibrasi konformal sekuensial": 4.636661670906394,
+    "Prediksi titik model final + kuantil galat terkini (EnbPI)": 4.541628040380555
+  },
+  "kuantil": [
+    0.05,
+    0.1,
+    0.25,
+    0.5,
+    0.75,
+    0.9,
+    0.95
+  ],
+  "jendela_hari": 28,
+  "min_galat": 50,
+  "pita_horizon": [
+    0,
+    6,
+    24,
+    72,
+    120
+  ],
+  "konfigurasi_lightgbm_kuantil": {
+    "kind": "lgbm",
+    "fs": "tele",
+    "target": "raw",
+    "hl": 180,
+    "alpha": null
+  },
+  "model_titik": [
+    "HistGradientBoosting \u00b7 CPU + kalender + telemetri terpilih \u00b7 target langsung \u00b7 bobot rata",
+    "LightGBM \u00b7 CPU + kalender + telemetri terpilih \u00b7 target langsung \u00b7 bobot half-life 180 hari",
+    "XGBoost \u00b7 CPU + kalender + telemetri terpilih \u00b7 target residual \u00b7 bobot half-life 180 hari"
+  ],
+  "seleksi_titik_sha256": "abe693959840af4712e76512ab9024c00fa7c48c654d505a40b56f7e17075043"
+}
