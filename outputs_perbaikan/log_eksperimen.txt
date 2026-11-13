@@ -1,0 +1,56 @@
+[22:08:34] pipeline v3 dimuat | final v3 = Ensemble GBDT · CPU + kalender + telemetri terpilih | baris training 534,421 | versi {'holidays': '0.108', 'scikit-learn': '1.9.1', 'lightgbm': '4.7.0', 'xgboost': '3.2.0', 'pandas': '3.1.1', 'numpy': '2.4.6', 'device': 'xgb:cuda, lgbm:cpu'}
+[22:09:09] pipeline v3 dimuat | final v3 = Ensemble GBDT · CPU + kalender + telemetri terpilih | baris training 534,421 | versi {'holidays': '0.108', 'scikit-learn': '1.9.1', 'lightgbm': '4.7.0', 'xgboost': '3.2.0', 'pandas': '3.1.1', 'numpy': '2.4.6', 'device': 'xgb:cuda, lgbm:cpu'}
+[22:09:10] fitur tambahan: 9 kolom, uji kebocoran lolos
+[22:09:26]   dilatih validation xgb|tele|resid|180|n300|cs|x0|b0  16 dtk
+[22:09:26] S0 reproduksi XGBoost v3: MAE val 7.6047 (cache v3 7.6047)
+[22:09:45]   dilatih validation xgb|tele|resid|180|n300|cm|x0|b0  19 dtk
+[22:09:45]   [S1 kapasitas] XGBoost 300 pohon, kedalaman 5: MAE val 7.7140 vs acuan 7.6047 (+1.44 %), fold lebih baik 1/4 -> tolak
+[22:10:06]   dilatih validation xgb|tele|resid|180|n300|cl|x0|b0  21 dtk
+[22:10:06]   [S1 kapasitas] XGBoost 300 pohon, kedalaman 6: MAE val 7.8319 vs acuan 7.6047 (+2.99 %), fold lebih baik 1/4 -> tolak
+[22:10:36]   dilatih validation xgb|tele|resid|180|n600|cs|x0|b0  30 dtk
+[22:10:36]   [S1 kapasitas] XGBoost 600 pohon, kedalaman 4: MAE val 7.5972 vs acuan 7.6047 (-0.10 %), fold lebih baik 2/4 -> tolak
+[22:11:07]   dilatih validation xgb|tele|resid|180|n600|cm|x0|b0  31 dtk
+[22:11:07]   [S1 kapasitas] XGBoost 600 pohon, kedalaman 5: MAE val 7.7469 vs acuan 7.6047 (+1.87 %), fold lebih baik 1/4 -> tolak
+[22:11:42]   dilatih validation xgb|tele|resid|180|n600|cl|x0|b0  35 dtk
+[22:11:42]   [S1 kapasitas] XGBoost 600 pohon, kedalaman 6: MAE val 7.8577 vs acuan 7.6047 (+3.33 %), fold lebih baik 1/4 -> tolak
+[22:12:29]   dilatih validation xgb|tele|resid|180|n1000|cs|x0|b0  47 dtk
+[22:12:29]   [S1 kapasitas] XGBoost 1000 pohon, kedalaman 4: MAE val 7.6259 vs acuan 7.6047 (+0.28 %), fold lebih baik 2/4 -> tolak
+[22:13:20]   dilatih validation xgb|tele|resid|180|n1000|cm|x0|b0  51 dtk
+[22:13:20]   [S1 kapasitas] XGBoost 1000 pohon, kedalaman 5: MAE val 7.7663 vs acuan 7.6047 (+2.12 %), fold lebih baik 1/4 -> tolak
+[22:14:16]   dilatih validation xgb|tele|resid|180|n1000|cl|x0|b0  56 dtk
+[22:14:16]   [S1 kapasitas] XGBoost 1000 pohon, kedalaman 6: MAE val 7.8944 vs acuan 7.6047 (+3.81 %), fold lebih baik 1/4 -> tolak
+[22:14:34]   dilatih validation xgb|tele|resid|180|n300|cs|x1|b0  18 dtk
+[22:14:34]   [S2 fitur] + fitur jam-sama 7 hari & statistik 4 minggu: MAE val 7.5973 vs acuan 7.6047 (-0.10 %), fold lebih baik 3/4 -> tolak
+[22:14:52]   dilatih validation xgb|tele|resid|None|n300|cs|x0|b0  18 dtk
+[22:14:52]   [S3 half-life] tanpa bobot waktu: MAE val 7.6164 vs acuan 7.6047 (+0.15 %), fold lebih baik 2/4 -> tolak
+[22:15:11]   dilatih validation xgb|tele|resid|45|n300|cs|x0|b0  19 dtk
+[22:15:11]   [S3 half-life] half-life 45 hari: MAE val 7.7493 vs acuan 7.6047 (+1.90 %), fold lebih baik 2/4 -> tolak
+[22:15:29]   dilatih validation xgb|tele|resid|90|n300|cs|x0|b0  19 dtk
+[22:15:29]   [S3 half-life] half-life 90 hari: MAE val 7.5733 vs acuan 7.6047 (-0.41 %), fold lebih baik 3/4 -> tolak
+[22:15:48]   dilatih validation xgb|tele|resid|365|n300|cs|x0|b0  19 dtk
+[22:15:48]   [S3 half-life] half-life 365 hari: MAE val 7.6542 vs acuan 7.6047 (+0.65 %), fold lebih baik 1/4 -> tolak
+[22:16:25]   dilatih validation xgb|tele|resid|180|n300|cs|x0|b1  38 dtk
+[22:16:25]   [S4 pita horizon] model terpisah per pita horizon (4 pita): MAE val 7.6226 vs acuan 7.6047 (+0.24 %), fold lebih baik 2/4 -> tolak
+[22:16:25] pengaturan lolos screening XGBoost: {'n_iter': 300, 'cap': 's', 'extra': False, 'bands': False}, half-life tetap
+[22:16:26]   [S7 koreksi bias] koreksi bias: jendela 14 hari, per pita horizon, shrink 0.5: MAE val 7.4433 vs acuan 7.5139 (-0.94 %), fold lebih baik 2/4 -> tolak
+[22:16:27]   [S7 koreksi bias] koreksi bias: jendela 14 hari, per pita horizon, shrink 1.0: MAE val 7.6565 vs acuan 7.5139 (+1.90 %), fold lebih baik 1/4 -> tolak
+[22:16:28]   [S7 koreksi bias] koreksi bias: jendela 14 hari, per pita x jam target, shrink 0.5: MAE val 7.2462 vs acuan 7.5139 (-3.56 %), fold lebih baik 4/4 -> ADOPSI
+[22:16:29]   [S7 koreksi bias] koreksi bias: jendela 14 hari, per pita x jam target, shrink 1.0: MAE val 7.5891 vs acuan 7.5139 (+1.00 %), fold lebih baik 1/4 -> tolak
+[22:16:30]   [S7 koreksi bias] koreksi bias: jendela 28 hari, per pita horizon, shrink 0.5: MAE val 7.5296 vs acuan 7.5139 (+0.21 %), fold lebih baik 2/4 -> tolak
+[22:16:31]   [S7 koreksi bias] koreksi bias: jendela 28 hari, per pita horizon, shrink 1.0: MAE val 7.7081 vs acuan 7.5139 (+2.58 %), fold lebih baik 1/4 -> tolak
+[22:16:32]   [S7 koreksi bias] koreksi bias: jendela 28 hari, per pita x jam target, shrink 0.5: MAE val 7.4031 vs acuan 7.5139 (-1.47 %), fold lebih baik 2/4 -> tolak
+[22:16:33]   [S7 koreksi bias] koreksi bias: jendela 28 hari, per pita x jam target, shrink 1.0: MAE val 7.6725 vs acuan 7.5139 (+2.11 %), fold lebih baik 1/4 -> tolak
+[22:16:33] SELEKSI DIBEKUKAN: ensemble baru=False [], koreksi bias={'jendela_hari': 14, 'kelompok': 'pita_jam', 'shrink': 0.5}, MAE val {'v3_final': 7.513899170753194, 'v4_tanpa_koreksi_bias': 7.513899170753194, 'v4_final': 7.24618318512659, 'rata_4minggu': 9.046934504050387}
+[22:18:13] pipeline v3 dimuat | final v3 = Ensemble GBDT · CPU + kalender + telemetri terpilih | baris training 534,421 | versi {'holidays': '0.108', 'scikit-learn': '1.9.1', 'lightgbm': '4.7.0', 'xgboost': '3.2.0', 'pandas': '3.1.1', 'numpy': '2.4.6', 'device': 'xgb:cuda, lgbm:cpu'}
+[22:18:14] fitur tambahan: 9 kolom, uji kebocoran lolos
+[22:19:00]   dilatih kalibrasi  hgb|tele|raw|None|n300|cs|x0|b0 refit mingguan  45 dtk
+[22:19:58]   dilatih kalibrasi  lgbm|tele|raw|180|n300|cs|x0|b0 refit mingguan  58 dtk
+[22:20:12]   dilatih kalibrasi  xgb|tele|resid|180|n300|cs|x0|b0 refit mingguan  15 dtk
+[22:23:22]   dilatih validation hgb|tele|raw|None|n300|cs|x0|b0 refit mingguan  189 dtk
+[22:29:32]   dilatih validation lgbm|tele|raw|180|n300|cs|x0|b0 refit mingguan  370 dtk
+[22:30:42]   dilatih validation xgb|tele|resid|180|n300|cs|x0|b0 refit mingguan  71 dtk
+[22:30:43]   [P2 refit mingguan] refit mingguan, tanpa koreksi bias (informasi): MAE val 7.5827 vs acuan 7.5139 (+0.92 %), fold lebih baik 2/4 -> tolak
+[22:30:43]   [P2 refit mingguan] refit mingguan + koreksi bias beku putaran 1: MAE val 7.3367 vs acuan 7.2462 (+1.25 %), fold lebih baik 2/4 -> tolak
+[22:30:43] PUTARAN 2 DIBEKUKAN: refit mingguan=False, MAE val {'putaran1_final': 7.24618318512659, 'refit_mingguan_tanpa_koreksi': 7.582692291254678, 'refit_mingguan_final': 7.3366837765229285, 'v4_final': 7.24618318512659}
+[22:31:06] pipeline v3 dimuat | final v3 = Ensemble GBDT · CPU + kalender + telemetri terpilih | baris training 534,421 | versi {'holidays': '0.108', 'scikit-learn': '1.9.1', 'lightgbm': '4.7.0', 'xgboost': '3.2.0', 'pandas': '3.1.1', 'numpy': '2.4.6', 'device': 'xgb:cuda, lgbm:cpu'}
+[22:31:07] fitur tambahan: 9 kolom, uji kebocoran lolos

@@ -1,0 +1,12 @@
+{
+  "dibekukan": "2026-11-12 22:30:43",
+  "aturan": "adopsi bila MAE validation turun >= 0.5 % relatif dan lebih baik di >= 3 dari 4 fold bulanan; urutan tahap S1-S7 tetap; acuan = hasil putaran 1; parameter koreksi bias tidak dipilih ulang",
+  "refit_mingguan": false,
+  "mae_validation": {
+    "putaran1_final": 7.24618318512659,
+    "refit_mingguan_tanpa_koreksi": 7.582692291254678,
+    "refit_mingguan_final": 7.3366837765229285,
+    "v4_final": 7.24618318512659
+  },
+  "seleksi_putaran1_sha256": "d36410f933ce40ae146b4c79c0a178b1bb0f84625337eb33e5b4441ea5b6a835"
+}

@@ -1,5 +1,5 @@
 Fase,Model A,Dibanding (B),Selisih MAE (A − B),CI 95% bawah,CI 95% atas,p,T origin,m,Kesimpulan
 Validation,"30 menit, riwayat panjang · final",30 menit · final,0.05047441029246143,-0.2654375629235535,0.36638638350847635,0.7369295870071196,471,7,tidak berbeda nyata
-Validation,"30 menit, riwayat panjang · final",1 jam · final (Ensemble GBDT · CPU + kalender + telemetri terpilih),0.08054891625589936,-0.20405073262321474,0.3651485651350135,0.5535496959365451,471,7,tidak berbeda nyata
+Validation,"30 menit, riwayat panjang · final",1 jam · final (Ensemble GBDT · CPU + kalender + telemetri terpilih),0.08054889854817932,-0.20405074788502214,0.3651485449813808,0.5535497786475013,471,7,tidak berbeda nyata
 Test,"30 menit, riwayat panjang · final",30 menit · final,-0.1625656417818883,-0.556341805759448,0.23121052219567143,0.3860830607303989,225,6,tidak berbeda nyata
-Test,"30 menit, riwayat panjang · final",1 jam · final (Ensemble GBDT · CPU + kalender + telemetri terpilih),-0.09366258147583009,-0.48562465318950787,0.29829949023784774,0.6120857611206638,225,6,tidak berbeda nyata
+Test,"30 menit, riwayat panjang · final",1 jam · final (Ensemble GBDT · CPU + kalender + telemetri terpilih),-0.09366257780324992,-0.48562465577583014,0.29829950016933027,0.6120857805366506,225,6,tidak berbeda nyata

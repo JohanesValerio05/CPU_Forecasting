@@ -1,0 +1,13 @@
+Fase,Model A,Dibanding (B),Selisih MAE (A − B),CI 95% bawah,CI 95% atas,p,T origin,m,Kesimpulan
+Validation,SESUDAH: model v4,SEBELUM: model final v3 (Ensemble GBDT + telemetri),-0.26842014162188776,-0.5237580650183221,-0.013082218225453413,0.04069352408415162,473,7,lebih baik
+Validation,SESUDAH: model v4,Rata-rata 4 minggu,-1.8006086117399702,-3.160241606482942,-0.4409756169969983,0.013095133502855148,473,7,lebih baik
+Validation,SEBELUM: model final v3 (Ensemble GBDT + telemetri),Rata-rata 4 minggu,-1.5321884701180823,-2.8930664903584673,-0.1713104498776974,0.030006926298200905,473,7,lebih baik
+Validation,SESUDAH: model v4,Naif musiman mingguan,-3.95990739679287,-5.368622510704084,-2.5511922828816562,3.096602306123356e-05,473,7,lebih baik
+Validation,Ablasi: v4 tanpa koreksi bias,SEBELUM: model final v3 (Ensemble GBDT + telemetri),0.0,0.0,0.0,,473,7,tidak berbeda nyata
+Validation,Ablasi: v3 + koreksi bias,SEBELUM: model final v3 (Ensemble GBDT + telemetri),-0.26842014162188776,-0.5237580650183221,-0.013082218225453413,0.04069352408415162,473,7,lebih baik
+Test,SESUDAH: model v4,SEBELUM: model final v3 (Ensemble GBDT + telemetri),-0.09089204965189843,-0.4058583123928923,0.22407421308909545,0.5412928993186649,225,6,tidak berbeda nyata
+Test,SESUDAH: model v4,Rata-rata 4 minggu,-0.599474493665946,-1.2922679618624877,0.09331897453059579,0.08382324183167492,225,6,tidak berbeda nyata
+Test,SEBELUM: model final v3 (Ensemble GBDT + telemetri),Rata-rata 4 minggu,-0.5085824440140475,-1.1843052417728757,0.16714035374478053,0.12696193830315164,225,6,tidak berbeda nyata
+Test,SESUDAH: model v4,Naif musiman mingguan,-1.8549569146542384,-2.7561781638617453,-0.9537356654467314,0.0007464294019753901,225,6,lebih baik
+Test,Ablasi: v4 tanpa koreksi bias,SEBELUM: model final v3 (Ensemble GBDT + telemetri),0.0,0.0,0.0,,225,6,tidak berbeda nyata
+Test,Ablasi: v3 + koreksi bias,SEBELUM: model final v3 (Ensemble GBDT + telemetri),-0.09089204965189843,-0.4058583123928923,0.22407421308909545,0.5412928993186649,225,6,tidak berbeda nyata

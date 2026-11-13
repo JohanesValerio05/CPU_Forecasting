@@ -1,0 +1,86 @@
+{
+  "dibekukan": "2026-11-12 22:16:33",
+  "aturan": "adopsi bila MAE validation turun >= 0.5 % relatif dan lebih baik di >= 3 dari 4 fold bulanan; urutan tahap S1-S7 tetap",
+  "ada_perubahan": true,
+  "ensemble_baru": false,
+  "spesifikasi_keluarga_baru": {},
+  "keluarga_tetap_v3": [
+    "hgb",
+    "lgbm",
+    "xgb"
+  ],
+  "koreksi_bias": {
+    "jendela_hari": 14,
+    "kelompok": "pita_jam",
+    "shrink": 0.5
+  },
+  "mae_validation": {
+    "v3_final": 7.513899170753194,
+    "v4_tanpa_koreksi_bias": 7.513899170753194,
+    "v4_final": 7.24618318512659,
+    "rata_4minggu": 9.046934504050387
+  },
+  "kapasitas": {
+    "s": {
+      "leaves": 15,
+      "depth": 4
+    },
+    "m": {
+      "leaves": 31,
+      "depth": 5
+    },
+    "l": {
+      "leaves": 63,
+      "depth": 6
+    }
+  },
+  "fitur_tambahan": [
+    "x_jamsama_1hari",
+    "x_jamsama_mean7",
+    "x_jamsama_std7",
+    "x_jamsama_max7",
+    "x_geser_7hari_vs_4minggu",
+    "x_naif_std4",
+    "x_naif_max4",
+    "x_naif_min4",
+    "x_naif_median4"
+  ],
+  "pita_training": [
+    [
+      0,
+      6,
+      1,
+      12
+    ],
+    [
+      6,
+      24,
+      4,
+      36
+    ],
+    [
+      24,
+      72,
+      18,
+      84
+    ],
+    [
+      72,
+      120,
+      60,
+      120
+    ]
+  ],
+  "seleksi_v3_sha256": "abe693959840af4712e76512ab9024c00fa7c48c654d505a40b56f7e17075043",
+  "data_sha256": "ca0d535357389a51d7b0aaee96305740996e547f5353f3b52cb74bb9c69eee2b",
+  "data_cutoff": "2026-11-01 00:00",
+  "versi_pustaka": {
+    "holidays": "0.108",
+    "scikit-learn": "1.9.1",
+    "lightgbm": "4.7.0",
+    "xgboost": "3.2.0",
+    "pandas": "3.1.1",
+    "numpy": "2.4.6",
+    "device": "xgb:cuda, lgbm:cpu"
+  }
+}

@@ -1,0 +1,9 @@
+Fase,Model A,Dibanding (B),Selisih MAE (A − B),CI 95% bawah,CI 95% atas,p,T origin,Kesimpulan
+Validation,Ensemble GBDT · CPU + kalender + telemetri terpilih,Ridge · CPU + kalender,-1.1590250693041109,-1.7057410890507845,-0.6123090495574373,0.0004563922814710817,473,lebih baik
+Validation,Ensemble GBDT · CPU + kalender + telemetri terpilih,Ridge · CPU + kalender + telemetri terpilih,-1.1984242872198485,-1.9004591098332129,-0.49638946460648414,0.002566694306511944,473,lebih baik
+Validation,Ridge · CPU + kalender,Rata-rata 4 minggu,-0.3731633712661688,-1.3751082224490754,0.6287814799167377,0.43774728566071747,473,tidak berbeda nyata
+Validation,Ridge · CPU + kalender + telemetri terpilih,Rata-rata 4 minggu,-0.33376415335043114,-1.562260206355637,0.8947318996547746,0.5693578963555781,473,tidak berbeda nyata
+Test,Ensemble GBDT · CPU + kalender + telemetri terpilih,Ridge · CPU + kalender,-0.523564457512397,-0.9800187837100792,-0.06711013131471477,0.027958836035836494,225,lebih baik
+Test,Ensemble GBDT · CPU + kalender + telemetri terpilih,Ridge · CPU + kalender + telemetri terpilih,-0.8336804996427764,-1.381518321482842,-0.2858426778027109,0.0061596959672320485,225,lebih baik
+Test,Ridge · CPU + kalender,Rata-rata 4 minggu,0.014982024397704284,-0.6973758908718494,0.7273399396672579,0.9642043549679986,225,tidak berbeda nyata
+Test,Ridge · CPU + kalender + telemetri terpilih,Rata-rata 4 minggu,0.32509806652808393,-0.5435299739008065,1.1937261069569742,0.4306998484686051,225,tidak berbeda nyata

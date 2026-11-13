@@ -1,0 +1,21 @@
+Fase,Model,MAE beku,MAE latih ulang,selisih
+Validation,Naif musiman mingguan,11.20756050160983,11.20756050160983,0.0
+Validation,Rata-rata 4 minggu,9.046934504050387,9.046934504050387,0.0
+Validation,HistGradientBoosting · CPU + kalender,7.763265725852602,7.763265725852602,0.0
+Validation,LightGBM · CPU + kalender,7.765112774933296,7.765112774933296,0.0
+Validation,XGBoost · CPU + kalender,7.655370804121437,7.655370804121437,0.0
+Validation,HistGradientBoosting · CPU + kalender + telemetri terpilih,7.683580943815816,7.683580943815816,0.0
+Validation,LightGBM · CPU + kalender + telemetri terpilih,7.615585653707519,7.615585653707519,0.0
+Validation,XGBoost · CPU + kalender + telemetri terpilih,7.604710361255877,7.604710460587491,9.933161404518387e-08
+Validation,Ensemble GBDT · CPU + kalender,7.693022430132351,7.693022430132351,0.0
+Validation,Ensemble GBDT · CPU + kalender + telemetri terpilih,7.513899170753194,7.513899200329503,2.957630851341264e-08
+Test,Naif musiman mingguan,8.87113124984153,8.87113124984153,0.0
+Test,Rata-rata 4 minggu,7.615068906169973,7.615068906169973,0.0
+Test,HistGradientBoosting · CPU + kalender,7.149012791078339,7.149012791078339,0.0
+Test,LightGBM · CPU + kalender,7.160866973649609,7.160866973649609,0.0
+Test,XGBoost · CPU + kalender,7.288763031065007,7.288763031065007,0.0
+Test,HistGradientBoosting · CPU + kalender + telemetri terpilih,7.263786531884974,7.263786531884974,0.0
+Test,LightGBM · CPU + kalender + telemetri terpilih,7.071463507879474,7.071463507879474,0.0
+Test,XGBoost · CPU + kalender + telemetri terpilih,7.190691754837712,7.19069176879319,1.3955478550542466e-08
+Test,Ensemble GBDT · CPU + kalender,7.175227567159704,7.175227567159704,0.0
+Test,Ensemble GBDT · CPU + kalender + telemetri terpilih,7.106102483877399,7.10610249478057,1.0903170810649954e-08

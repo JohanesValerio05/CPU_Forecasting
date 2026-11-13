@@ -1,0 +1,12 @@
+File keluaran,Baris,Struktur & teks sama,Selisih angka terbesar
+outputs_v3_baru/metrik.csv,20,ya,3.2360193795710757e-06
+outputs_v3_baru/uji_dm.csv,18,ya,5.907745749267335e-07
+outputs_v3_baru/metrik_probabilistik.csv,6,ya,5.58583280962921e-07
+outputs_v3_baru/biaya_kapasitas.csv,8,ya,7.791710707749644e-07
+outputs_v3_baru/kontribusi_shap.csv,6,ya,1.07354453326991e-07
+outputs_30m_baru/metrik_per_model.csv,20,ya,2.857142852974448e-06
+outputs_30m_baru/uji_dm_30m_vs_1jam.csv,20,ya,9.333010750900428e-07
+outputs_30m_baru/uji_dm_riwayat_panjang.csv,4,ya,8.271095619516444e-08
+outputs_15m_baru/metrik_per_model.csv,20,ya,2.864583333206383e-06
+outputs_15m_baru/uji_dm_15m_vs_1jam.csv,20,ya,9.514023844303665e-07
+outputs_15m_baru/uji_dm_tiga_resolusi.csv,4,ya,9.764368780196264e-08
